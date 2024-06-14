@@ -41,7 +41,7 @@ jobs:
              snyk test --json | snyk-to-html -o result.html
              mkdir downloads
              cp -v ./*.html ./downloads
-             cp -v ./*.lockfile ./downloads
+             # cp -v ./*.lockfile ./downloads
              snyk monitor --project-name=vishgore/VulnerableApp --org=409742a7-81d8-4dbb-93f8-199b0e94ea6c
              
     # save the HTML in the artifact
